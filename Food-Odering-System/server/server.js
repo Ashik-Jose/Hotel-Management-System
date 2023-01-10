@@ -7,48 +7,42 @@ import Tableroutes from './src/routes/index.js'
 
 const app = express();
 dotenv.config();
-const {Pool} = pg;
+const { Pool } = pg;
 const port = process.env.PORT || 2000;
 
 
-app.use(bodyParser.json({limit: "30mb",extended:true}));
-app.use(bodyParser.urlencoded({ limit: "30mb",extended: true }))
+app.use(bodyParser.json({ limit: "30mb", extended: true }));
+app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }))
 
 app.use(cors());
 
 app.use(Tableroutes);
 
 app.get('/', (req, res) => {
-    res.status(200).send({
-      success: 'true',
-      message: 'Seja bem-vindo(a) a API Node.js + PostgreSQL + Azure!',
-      version: '1.0.0',
-    });
+  res.status(200).send({
+    success: 'true',
+    message: 'Seja bem-vindo(a) a API Node.js + PostgreSQL + Azure!',
+    version: '1.0.0',
   });
+});
 
 const pool = new Pool({
-    connectionString: process.env.DATABASE_URL
+  connectionString: process.env.DATABASE_URL
 })
-//console.log(pool)
-// pool.on('connect', () => {
-//     console.log("Database Connected");
-// });
-pool.connect((err,connection)=> {
-    if(err)
-        console.log(err)
-  //  console.log(connection)
-    console.log('Database connected successfully');
-    //connection.release();
-  });
+
+pool.connect((err, connection) => {
+  if (err)
+    console.log(err)
+  console.log('Database connected successfully');
+});
 
 app.listen(2000, () => {
-    console.log("Port Listening",2000)
+  console.log("Port Listening", 2000)
 });
 
 
-const db =  {
-    query: (text, params) => pool.query(text, params)
-  };
-// console.log(await db.query("select * from ashik"))
+const db = {
+  query: (text, params) => pool.query(text, params)
+};
 export default db;
 

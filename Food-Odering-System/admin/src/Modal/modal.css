@@ -1,0 +1,74 @@
+/* *{
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+} */
+
+.main-card{
+    background-color:#BD8757;
+    border-radius: 10px;
+    color: aliceblue;
+    top: 85%;
+    left:50%;
+    transform: translate(-50%,-100%);
+    position: absolute;
+    padding: 20px;
+}
+.form-group{
+    padding: 17px;
+}
+.form-control{
+    border-radius: 6px;
+    border-style: hidden;
+    padding: 5px;
+    padding-left: 10px;
+    margin-left: 2rem;
+    box-shadow: 15px 15px 4px rgba(0, 0, 0, 0.25);
+}
+.form-select{
+    border-radius: 6px;
+    border-style: hidden;
+    margin-left: 2rem;    
+    padding: 5px;
+    box-shadow: 15px 15px 4px rgba(0, 0, 0, 0.25);   
+}
+.btn1{
+    margin-right: 20px; 
+    margin-left: 60px;
+    border-radius: 10px;
+    border-style: hidden;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+.btn2{
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    border-style: hidden;
+    padding: 10px; 
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor:pointer;
+}
+.heading{
+    text-align: center;
+}
+
+.buttons{
+    align-items: center;
+}
+.btn{
+   border-radius: 10px;
+   border-style: hidden;
+   padding: 4px; 
+}
+
+
+.button-group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+}

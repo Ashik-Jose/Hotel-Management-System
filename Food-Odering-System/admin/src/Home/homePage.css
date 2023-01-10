@@ -1,0 +1,60 @@
+.home-heading{
+    color: #9E7339;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    padding-top: 4rem;
+}
+
+.table-card {
+    background: #9E7339;
+    box-shadow: 15px 15px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.table-card :hover{
+    border: 2px solid #FFFDFD;
+    border-radius: 15px;
+}
+
+.card-content{
+    display: flex;
+    padding: 1.5rem;
+}
+
+.card-content :hover{
+    border: none;
+}
+
+.card-name {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.6rem;
+    line-height: 36px;
+    text-align: center;
+    color: white;
+    margin-top: 19px;
+    margin-left: 30px;
+}
+
+.row1{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+    
+}
+
+.row2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+}

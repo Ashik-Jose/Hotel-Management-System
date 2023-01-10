@@ -1,0 +1,47 @@
+.LoginPage{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .login-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 30px 30px;
+    background-color: #9E7339;
+    margin: 13rem;
+    border-radius: 20px;
+    border: 1px solid #000000;
+  }
+  
+  .login-heading{
+    color: white;
+    font-family: 'Imprima';
+    font-weight: 400;
+    font-size: 30px;
+  }
+  
+  .login-name{
+    border: 1px solid #000000;
+    border-radius: 70px;
+    font-size: larger;
+    padding-left: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .login-password{
+    border: 1px solid #000000;
+    border-radius: 70px;
+    font-size: larger;
+    padding-left: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  /* form :focus{
+    outline: none;
+  } */
+  
