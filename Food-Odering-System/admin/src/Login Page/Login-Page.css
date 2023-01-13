@@ -1,6 +1,8 @@
 .LoginPage{
     display: flex;
     justify-content: center;
+    background: url(../Assets/LoginPage.png) no-repeat;
+    height: 100vh;
   }
   
   .login-box{
@@ -10,6 +12,7 @@
     padding: 0px 30px 30px;
     background-color: #9E7339;
     margin: 13rem;
+    margin-top: 12rem;
     border-radius: 20px;
     border: 1px solid #000000;
   }

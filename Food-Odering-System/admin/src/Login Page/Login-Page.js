@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './Login-Page.css';
 import signIn from '../Assets/signIn.svg';
 import signInErr from '../Assets/SignInErr.svg';
+import LoginBackground from '../Assets/LoginPage.png';
 import { useNavigate } from 'react-router';
 import API from '../api';
 
@@ -21,7 +22,7 @@ const navigate = useNavigate();
                             marginTop: "0px",
                             fontSize: "20px",
                             fontWeight: "bold"
-                        }}>Name</p></label>
+                        }}>Name of the Manager</p></label>
                         <input className="login-name" value={login.username} onChange={(e) => {setLogin({...login, username:e.target.value}); setErr(false)}}/>
                     </div>
                     <div style={{ marginBottom: "12px" }}>
